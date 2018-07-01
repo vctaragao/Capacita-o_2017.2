@@ -1,0 +1,363 @@
+/*   RESET   */
+*{
+	margin:0;
+	padding: 0;
+	font-size: 100%;
+	border:none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'Mukta', sans-serif;
+}
+
+body{
+	background-color: #ffffff;
+}
+
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*	CABEÇALHO */
+
+.gambiarra{
+	height: 70px;
+}
+
+.cabecalho{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: rgba(0, 48, 51,1);
+}
+
+.logo{
+	width: 70px;
+	height: 70px;
+	margin-left: 20px;
+	background: url(../img/logo_stick.png) center center/70px no-repeat;
+}
+
+.navbar_toggler{
+	width: 70px;
+	height: 70px;
+	font-size:1.5em;
+	border-radius: 56px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer	
+}
+.cabecalho ul{
+	flex-direction: column;
+}
+.menu{
+	width: 100%;
+}
+.menu li{
+	width: 100%;
+	text-align: center;
+}
+.menu li a{
+	padding: 8px;
+	color:white;
+}
+
+.stick{
+	position: fixed;
+}
+
+/* SOBRE */
+.sobre{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 3% 4%;
+	background-color: rgba(246, 228, 173,0.7);
+
+}
+.sobre h2{
+	width: 100%;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: 900;
+}
+.sobre h4{
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: 600;
+	margin-top: 2%;
+	
+}
+.sobre p{
+	line-height: 1.6em;
+	font-size: 0.95em;
+}
+
+/* EVENTOS */
+.eventos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 2%;
+}
+.eventos h1{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.evento{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: rgba(236, 241, 142,0.7);
+	margin-bottom: 15px;
+	box-shadow: 1px 1px 5px #888888;
+}
+.evento img{
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.evento h2{
+	width: 100%;
+	text-align: center;	
+	font-size: 1.5em;
+}
+.evento h3{
+	width: 100%;
+	padding: 2%;
+	margin-bottom: 15px;
+
+}
+
+/* PRODUTOS */
+#nossos_produtos{
+	position: absolute;
+	top: 1680px;
+}
+.produtos{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgba(138, 149, 243,0.8);
+
+}
+.produtos h1{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.produtos h3{
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+}
+.carousel_background{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.carrosel{
+	max-width: 60%;
+}
+.proximo{
+	position: relative;
+	right:0;
+	top:50%;
+	opacity: 0.7;
+}
+.anterior{
+	position: relative;
+	left: 0;
+	top: 50%;
+	opacity: 0.7;
+}
+
+.proximo:hover,
+.anterior:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+
+/* CONTATO */
+.contato{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #EEEEEE;
+}
+.contato h1{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+.contato form{
+	width: 90%;
+}
+.contato form input[type=text],
+.contato form textarea{
+	width: 100%;
+	padding: 4px;
+	border: 1px solid grey;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+.contato form input[type=submit]{
+	width: 100%;
+	text-align: center;
+	padding:4px;
+	margin-top: 5px;
+	background-color: white;
+	border-radius: 4px;
+	cursor: pointer;
+	border: 1px solid black;
+	margin-bottom: 2%;
+}
+
+/* FOOTER */
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #444444;
+	color: white;
+}
+
+.footer h4{
+	padding: 2px;
+}
+
+.social{
+	padding: 8px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.social i{
+	color: white;
+	font-size: 1.5em;
+	opacity: 0.7;
+}
+.social i:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+/* IDS NAVIGATION */
+#sobre,
+#eventos,
+#nossos_produtos{
+	position: relative;
+	top: -70px;
+}
+
+/* 	MOBILE FIRST */
+
+/* SMALL DEVICES */
+@media screen and (min-width: 480px){
+	.logo{
+		width: 90px;
+		background: url(../img/logo_stick.png) center center/90px no-repeat;
+	}
+	.navbar_toggler{
+		font-size:1.8em;
+
+	}
+	.menu li a{
+		font-size: 1.3em;
+	}
+	.sobre p{
+		font-size: 0.92em;
+	}
+	.contato form{
+		width: 70%;
+	}
+	.contato form input[type=submit]{
+		font-size: 1.2em;
+	}
+	.carrosel{
+		max-width: 40%;
+	}
+}
+
+/* MEDIUM DEVICES */
+@media screen and (min-width: 768PX){
+	.evento{
+		width: 45%;
+	}
+	.social{
+		width: 100%;
+	}
+	.contato form{
+		width: 50%;
+	}
+	.carrosel{
+		max-width: 40%;
+	}
+	.navbar_toggler{
+		display: initial;
+	}
+	.carousel_background{
+		margin-top: 15px;
+		width: 60%;
+	}
+}
+/* MEDIUM LARGE */
+@media screen and (min-width: 980px){
+	.cabecalho{
+		align-items: center;
+	}
+	.logo{
+		width: 115px;
+		background: url(../img/logo_stick.png) center center/115px no-repeat;
+	}
+	.navbar_toggler{
+		display: none;
+	}
+	.cabecalho ul{
+		width: 80%;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.menu li{
+		width: auto;
+	}
+}
+/* LARGE */
+@media screen and (min-width: 1024px){
+	.eventos{
+		margin-bottom: 30px;
+	}
+	.evento{
+		width: 30%;
+	}
+	.contato form{
+		width: 30%;
+	}
+	.carrosel{
+		max-width: 30%;
+	}
+	.sobre p{
+		font-size: 1em;
+	}
+	.produtos h3{
+	font-size: 1.3em;
+	}
+}
